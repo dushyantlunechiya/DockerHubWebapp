@@ -15,10 +15,10 @@ Note: This image is built using the ARM64 Architecture but supports AMD64 Archit
 
 Running the Web-app in your browser:
 
-  1. pull the docker image - docker pull 'imagename'
+  1. pull the docker image - docker pull 'dushyantlunechiya/webapp'
   2. 
-    1. To run the image on ARM64 - docker run --publish 3000:3000 'imagename'
+    1. To run the image on ARM64 - docker run --publish 3000:3000 'dushyantlunechiya/webapp'
     2. To run the image on linux/amd64 - 
       install the qemu packages - sudo apt-get install qemu binfmt-support qemu-user-static
-      run the image - sudo docker run --rm -t --publish 3000:3000 --platform linux/arm64 'imagename'
+      run the image - sudo docker run --rm -t --publish 3000:3000 --platform linux/arm64 'dushyantlunechiya/webapp'
   3. Open Chrome and open the following URL - http://localhost:3000/
